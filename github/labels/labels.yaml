@@ -1,0 +1,227 @@
+org: dtr-org
+shared:
+  - &welcome
+    name: Welcome
+    labels:
+    - name: good first issue
+      color: a0f324
+      description: Good for newcomers
+      id: good_first_issue
+  - &wip_color '666666'
+repos:
+- repo: unit-e-clonemachine
+  categories:
+  - name: Status
+    labels:
+    - name: wip
+      color: *wip_color
+      description: Work in progress which is not supposed to be merged yet
+      id: wip
+  - name: Type
+    labels:
+    - name: bug
+      color: d73a4a
+      description: A problem of existing functionality
+      id: bug
+    - name: feature
+      color: 38d33d
+      description: New functionality
+      id: feature
+    - name: refactoring
+      color: 54d958
+      description: Changes which clean up code but don't change the user-visible behavior
+      id: refactoring
+  - name: Category
+    labels:
+    - name: technical debt
+      color: 77acfe
+      description: 'Cleaning up code which is there for historical reasons'
+      id: technical_debt
+    - name: tests
+      color: 66a1fe
+      description: 'Automated tests'
+      id: tests
+  - *welcome
+- repo: docs.unit-e.io
+  categories:
+  - name: Status
+    labels:
+    - name: wip
+      color: *wip_color
+      description: Work in progress which is not supposed to be merged yet
+      id: wip
+    - name: backport
+      color: f7ca96
+      description: Feature should be contributed to bitcoin
+      id: backport
+    - name: backported
+      color: f7931a
+      description: Feature has been merged into bitcoin also
+      id: backported
+  - name: Type
+    labels:
+    - name: bug
+      color: d73a4a
+      description: A problem of existing functionality
+      id: bug
+    - name: feature
+      color: 38d33d
+      description: New functionality
+      id: feature
+  - name: Category
+    labels:
+    - name: presentation
+      color: dceaff
+      description: Styling, navigation, structure, etc.
+      id: presentation
+    - name: repo
+      color: 98c0ff
+      description: Configuration of the repository itself
+      id: repo
+    - name: language
+      color: 77acfe
+      description: English language, grammar, spelling, style, etc.
+      id: language
+  - name: Component
+    color: ffcc00
+    labels:
+    - name: developer docs
+      description: ''
+      id: developer_docs
+    - name: operator docs
+      description: ''
+      id: operator_docs
+    - name: user docs
+      description: ''
+      id: user_docs
+    - name: glossary
+      description: ''
+      id: glossary
+  - *welcome
+- repo: unit-e-desktop
+  categories:
+  - name: Status
+    labels:
+    - name: wip
+      color: *wip_color
+      description: Work in progress which is not supposed to be merged yet
+      id: wip
+  - name: Type
+    labels:
+    - name: bug
+      color: d73a4a
+      description: A problem of existing functionality
+      id: bug
+    - name: feature
+      color: 38d33d
+      description: New functionality
+      id: feature
+    - name: refactoring
+      color: 54d958
+      description: Changes which clean up code but don't change the user-visible behavior
+      id: refactoring
+    - name: performance
+      color: 6fdf73
+      description: 'Affecting the performance of the software'
+      id: performance
+    - name: broken test
+      color: dd5664
+      description: A test isn't working
+      id: broken_test
+    - name: floating test
+      color: e2727e
+      description: A test that sometimes but not always fails
+      id: floating_test
+  - name: Category
+    labels:
+    - name: build
+      color: dceaff
+      description: Build system
+      id: build
+    - name: ci
+      color: cbdfff
+      description: Continuous integration
+      id: ci
+    - name: style
+      color: bad5ff
+      description: Code style and naming
+      id: style
+    - name: documentation
+      color: a9cbff
+      description: Documentation
+      id: documentation
+    - name: repo
+      color: 98c0ff
+      description: Configuration of the repository itself
+      id: repo
+    - name: security
+      color: 87b6fe
+      description: A security related issue
+      id: security
+    - name: technical debt
+      color: 77acfe
+      description: 'Cleaning up code which is there for historical reasons'
+      id: technical_debt
+    - name: tests
+      color: 66a1fe
+      description: 'Automated tests'
+      id: tests
+    - name: usability
+      color: 3382fe
+      description: ''
+      id: usability
+  - name: Platform
+    color: 9a6af2
+    labels:
+    - name: linux
+      description: ''
+      id: linux
+    - name: windows
+      description: ''
+      id: windows
+    - name: mac
+      description: ''
+      id: mac
+  - *welcome
+- repo: unit-e-project
+  categories:
+  - name: Status
+    labels:
+    - name: wip
+      color: *wip_color
+      description: Work in progress which is not supposed to be merged yet
+      id: wip
+  - name: Type
+    labels:
+    - name: bug
+      color: d73a4a
+      description: A problem of existing functionality
+      id: bug
+    - name: feature
+      color: 38d33d
+      description: New functionality
+      id: feature
+  - name: Category
+    labels:
+    - name: decision
+      color: dceaff
+      description: Take a decision and document it as ADR
+      id: decision
+    - name: documentation
+      color: a9cbff
+      description: Documentation
+      id: documentation
+    - name: repo
+      color: 98c0ff
+      description: Configuration of the repository itself
+      id: repo
+  - name: Areas
+    labels:
+    - name: open sourcing
+      color: 7fe214
+      description: Task related to setting up the open source project
+      id: open_sourcing
+    - name: process
+      color: 86edee
+      description: About the way we work
+      id: process
